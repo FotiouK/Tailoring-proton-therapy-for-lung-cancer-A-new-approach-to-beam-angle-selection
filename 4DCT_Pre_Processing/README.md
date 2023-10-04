@@ -5,4 +5,6 @@
 <br />   <strong>MIP</strong>  : Displays the voxel with highest attenuation of the index.
 <br />   <strong>MinIP</strong> : Displays the voxel with minimum attenuation of the index.
 <p>
-![AIP_MIP_MinIP](https://github.com/FotiouK/Tailoring_Proton_Therapy_for_Lung_Cancer_Patients/assets/108896534/95653df2-7f6b-4dd2-9a05-8da1fc66720b)
+<p align="center">
+![AIP_MIP_MinIP](https://github.com/FotiouK/Tailoring_Proton_Therapy_for_Lung_Cancer_Patients/assets/108896534/5d4e8426-2304-406f-ad37-64600871fa33)
+<p>
