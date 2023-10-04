@@ -5,7 +5,7 @@
 <br />   <strong>MIP</strong>  : Displays the voxel with highest attenuation of the index.
 <br />   <strong>MinIP</strong> : Displays the voxel with minimum attenuation of the index.
 <p> 
-<br/>
-![AIP_MIP_MinIP](../Images/AIP_MIP_MinIP.png)
+
+![](../Images/AIP_MIP_MinIP.png)
 
 
