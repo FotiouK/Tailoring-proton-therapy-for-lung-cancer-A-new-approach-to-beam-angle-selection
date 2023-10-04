@@ -6,5 +6,5 @@
 <br />   <strong>MinIP</strong> : Displays the voxel with minimum attenuation of the index.
 <p> 
 <br/>
-![AIP_MIP_MinIP](https://github.com/FotiouK/Tailoring_Proton_Therapy_for_Lung_Cancer_Patients/Images/AIP_MIP_MinIP.png)
+![AIP_MIP_MinIP](Images/AIP_MIP_MinIP.png)
   
