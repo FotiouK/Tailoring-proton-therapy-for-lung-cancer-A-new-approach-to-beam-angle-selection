@@ -50,5 +50,11 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
   <img src="../Images/Angle_Selection/Z_Score_Values_p104.png">
 </p>
 
+</br>  To create a unified metric, we followed a methodology similar to the treatment planning optimisation process, where weighting factors are applied to plan parameters. In this case, we multiplied each map with distinct weighting factors and then summed them to generate the Final Z-score map. These weighting factors were determined based on various considerations, including patient anatomy, analysis of variable effectiveness maps, and the patient's prior medical history. This approach allowed for adjustments between plan objectives during the angle selection process, enabling a higher flexibility during treatment planning.
+</br>  For patient 104, we applied specific weighting factors as follows: a tumour weighting factor of 2, 1.5 for the heart, 1.8 for the lungs, and 0.5 for the spinal cord. The resulting Final Z-Score map is shown below.
+
+<p align="center">
+  <img src="../Images/Angle_Selection/Final_Z_Score_Map_p104.png">
+</p>
 
 
