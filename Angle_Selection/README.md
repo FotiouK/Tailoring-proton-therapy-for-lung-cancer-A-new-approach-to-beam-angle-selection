@@ -35,3 +35,7 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 
 **Organs At Risk Dose:**
 </br> The impact of incident beam geometry on the accumulated dose for organs at risk was evaluated through the Percentage Volume Irradiation (PIV). PIV measures the overlap between the incident beam and the organ, normalised to the total organ volume. The algorithm considered organs at risk such as the heart, lungs, and spinal cord.
+
+<p align="center">
+  <img src="../Images/Pre_Processing/AIP_MIP_MinIP.png">
+</p>
