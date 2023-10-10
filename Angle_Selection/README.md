@@ -36,6 +36,19 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 **Organs At Risk Dose:**
 </br> The impact of incident beam geometry on the accumulated dose for organs at risk was evaluated through the Percentage Volume Irradiation (PIV). PIV measures the overlap between the incident beam and the organ, normalised to the total organ volume. The algorithm considered organs at risk such as the heart, lungs, and spinal cord.
 
+</br> These calculations were performed for approximately 350 beam orientations, with the 2D maps below depicting  the results for patient 104.
+
 <p align="center">
-  <img src="../Images/Pre_Processing/AIP_MIP_MinIP.png">
+  <img src="../Images/Angle_Selection/PIV_WEPL_p104.png">
 </p>
+
+### Z-Score Normalisation.
+</br> We integrated information from the Water Equivalent Path Length difference (ΔWEPL) and Organ at Risk irradiation maps using the Z-score statistic. This statistical method standardized the values of each map, allowing us to combine them into a single metric.Z-score conversion was applied to every pixel in the maps shown in Figure 3.15. This transformation turned pixel values into relative variables, indicating their deviation from the population average in terms of standard deviation. Positive Z-scores represented values above the mean, while negative Z-scores indicated values below the mean.
+</br> Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient 104. Upon comparison with the previously mentioned maps, we observed consistent behavioural patterns, with only variations in pixel values.
+
+<p align="center">
+  <img src="../Images/Angle_Selection/Z_score_values_p104.png">
+</p>
+
+
+
