@@ -1,6 +1,6 @@
-### Angle Selection Algorithm
+## Angle Selection Algorithm
 
-## Beam Simulation 
+### Beam Simulation 
 To assess the impact of incident beam geometry on plan quality, we developed an angle selection algorithm. This algorithm identifies the irradiated voxels for any given beam geometry by simulating proton beam paths. It relies on couch and gantry angles to determine the relative beam direction, achieved through rotation transformation matrices for an input CT scan oriented along the SI, AP, and RL direction.
 
 **Transformation Matrices:**
@@ -24,3 +24,14 @@ To assess the impact of incident beam geometry on plan quality, we developed an 
 **Generating Beam Rays**
 <img align="right" width="300" height="250"  src="../Images/Angle_Selection/p104_Beam_Visualisation.png">
 </br> Subsequently, we simulate beam rays inversely, using the estimated distal edge points and the beam step vector. Initiating from the identified distal edge points, the algorithm generates lines representing beam trajectories by incrementing the coordinates in the opposite direction of the beam ray. This iterative process continues until the proton ray reaches the image boundaries, encompassing all distal edge points. To handle steps with decimal places, only the coordinate corresponding to a unique voxel traversed by the beam is rounded up, while the rolling sum of coordinates retains decimal precision. The output consists of a list of lists, where each inner list contains the irradiated voxels along the proton ray's path, terminating at a distal edge point. In the adjacent image, we visualise the simulate beam for gantry angle 45 and couch angle 0 degrees in blue, the tumour in red and the distal edge in yellow. The distal edge was expanded by 5mm for visualisation purposes.
+
+
+### ΔWEPL and OAR irradiation maps
+Optimal proton beam geometry should consider both tumour coverage and minimising dose to organs at risk. We evaluated tumor coverage using Water Equivalent Path Length (WEPL) analysis and assessed organs at risk using Percentage Volume Irradiation (PIV).
+
+**Tumour Coverage:**
+</br> WEPL represents the path a proton beam traverses through water, calculated by summing the relative proton stopping power ratio multiplied by the cohort length. Thus, the RSP converted CT scans from our pre-processing algorithm were used as the input. In the context of proton beam therapy for lung cancer, treatment planning is performed on a static representation of the target volume. A key objective is to minimise the variations in WEPL along the planned and evaluated beam paths, aiming to reduce uncertainties in proton range.
+We determined the reference WEPL from planning CT scans (AIP CT from pre-processing) for each proton ray with specific gantry-couch angles. We also computed the WEPLs of each ray for all breathing phases from the converted RSP 4DCT scans. ΔWEPL for each ray was calculated by subtracting the absolute value of reference WEPL from the evaluated WEPL. The average of all proton rays yielded a single-phase proton beam ΔWEPL, while averaging over all phases provided the overall ΔWEPL value representative of the entire beam. 
+
+**Organs At Risk Dose:**
+</br> The impact of incident beam geometry on the accumulated dose for organs at risk was evaluated through the Percentage Volume Irradiation (PIV). PIV measures the overlap between the incident beam and the organ, normalised to the total organ volume. The algorithm considered organs at risk such as the heart, lungs, and spinal cord.
