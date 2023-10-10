@@ -39,7 +39,7 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 </br> These calculations were performed for approximately 350 beam orientations, with the 2D maps below depicting  the results for patient 104.
 
 <p align="center">
-  <img src="../Images/Angle_Selection/PIV_WEPL_p104.png">
+  <img  height="300" src="../Images/Angle_Selection/PIV_WEPL_p104.png">
 </p>
 
 ### Z-Score Normalisation.
@@ -47,14 +47,14 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 </br> Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient 104. Upon comparison with the previously mentioned maps, we observed consistent behavioural patterns, with only variations in pixel values.
 
 <p align="center">
-  <img src="../Images/Angle_Selection/Z_Score_Values_p104.png">
+  <img height="300" src="../Images/Angle_Selection/Z_Score_Values_p104.png">
 </p>
 
 </br>  To create a unified metric, we followed a methodology similar to the treatment planning optimisation process, where weighting factors are applied to plan parameters. In this case, we multiplied each map with distinct weighting factors and then summed them to generate the Final Z-score map. These weighting factors were determined based on various considerations, including patient anatomy, analysis of variable effectiveness maps, and the patient's prior medical history. This approach allowed for adjustments between plan objectives during the angle selection process, enabling a higher flexibility during treatment planning.
 </br>  For patient 104, we applied specific weighting factors as follows: a tumour weighting factor of 2, 1.5 for the heart, 1.8 for the lungs, and 0.5 for the spinal cord. The resulting Final Z-Score map is shown below.
 
 <p align="center">
-  <img src="../Images/Angle_Selection/Final_Z_Score_Map_p104.png">
+  <img height="300" src="../Images/Angle_Selection/Final_Z_Score_Map_p104.png">
 </p>
 
 
