@@ -16,6 +16,9 @@ To assess the impact of incident beam geometry on plan quality, we developed an 
 </br> Instead of directly transforming the scans, we divide the beam path into discrete steps, initiating from the tumour’s distal edge points and inversely simulating the proton beam paths. We utilise a directional vector [0,-1,0] to represent each step's direction, ensuring that for gantry and couch angles of 0 degrees, the beam travels normally towards the patient from the anterior direction. This methodology helps generate the step vector of magnitude 1 describing the beam path for any arbitrary gantry-couch angle combination.
 
 
+<img align="left" width="100" height="100" src="image_url"> <!-- Replace 'image_url' with the URL of your image -->
+
+
 **Distal Edge Identification:**
 </br> To identify the tumour’s distal edge for various angle combinations, we employ a binary search approach. The algorithm uses the estimated step distance, derived from beam geometry, and the tumour’s spatial coordinates to search in the opposite direction of the step distance. Starting the search from each voxel within the tumor, the algorithm evaluates adjacent voxels along the beam path. The binary search continues until non-tumor tissue is encountered or a predetermined threshold is reached at the tumor boundary. Successful execution of the binary search results in an array containing the distal edge coordinates of the tumor.
 
