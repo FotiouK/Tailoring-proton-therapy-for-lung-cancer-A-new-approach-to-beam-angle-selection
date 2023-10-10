@@ -47,7 +47,7 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 </br> Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient 104. Upon comparison with the previously mentioned maps, we observed consistent behavioural patterns, with only variations in pixel values.
 
 <p align="center">
-  <img src="../Images/Angle_Selection/Z_score_values_p104.png">
+  <img src="../Images/Angle_Selection/Z_Score_Values_p104.png">
 </p>
 
 
