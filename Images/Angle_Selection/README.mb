@@ -1,0 +1,4 @@
+### Angle Selection Algorithm
+To assess the impact of incident beam geometry on plan quality, we developed an angle selection algorithm. This algorithm identifies the irradiated voxels for any given beam
+geometry by simulating proton beam paths. It relies on couch and gantry angles to determine the relative beam direction, achieved through rotation transformation matrices for 
+an input CT scan oriented along the SI, AP, and RL direction.
