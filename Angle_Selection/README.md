@@ -27,7 +27,7 @@ To assess the impact of incident beam geometry on plan quality, we developed an 
 
 
 ### ΔWEPL and OAR irradiation maps
-Optimal proton beam geometry should consider both tumour coverage and minimising dose to organs at risk. We evaluated tumor coverage using Water Equivalent Path Length (WEPL) analysis and assessed organs at risk using Percentage Volume Irradiation (PIV).
+Optimal proton beam geometry should consider both tumour coverage and minimising dose to organs at risk. We evaluated tumor coverage using Water Equivalent Path Length (WEPL) analysis and assessed organs at risk using Percentage Volume Irradiation (PIV). Calculations were performed for approximately 350 beam orientations, with the 2D maps below depicting  the results for patient 104.
 
 **Tumour Coverage:**
 </br> WEPL represents the path a proton beam traverses through water, calculated by summing the relative proton stopping power ratio multiplied by the cohort length. Thus, the RSP converted CT scans from our pre-processing algorithm were used as the input. In the context of proton beam therapy for lung cancer, treatment planning is performed on a static representation of the target volume. A key objective is to minimise the variations in WEPL along the planned and evaluated beam paths, aiming to reduce uncertainties in proton range.
@@ -36,7 +36,6 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 **Organs At Risk Dose:**
 </br> The impact of incident beam geometry on the accumulated dose for organs at risk was evaluated through the Percentage Volume Irradiation (PIV). PIV measures the overlap between the incident beam and the organ, normalised to the total organ volume. The algorithm considered organs at risk such as the heart, lungs, and spinal cord.
 
-</br> These calculations were performed for approximately 350 beam orientations, with the 2D maps below depicting  the results for patient 104.
 
 <p align="center">
   <img  height="300" src="../Images/Angle_Selection/PIV_WEPL_p104.png">
@@ -59,5 +58,6 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 
 
 ### Angle Selection 
+<img align="left"   src="../Images/Angle_Selection/Central_angle_theorem.png">
 </br> Using the Final Z-score map for each patient, we extracted and utilised the three optimal treatment angles for treatment planning. These optimal angles were identified by selecting the three-angle combination with the lowest Z-score. To prevent cross-beam irradiation, we enforced a minimum 20-degree angle separation between all beams. We assessed beam separation based on the Central Angle theorem, which describes the angular separation of two points located on the surface of a sphere. In our case, these two points represented the starting points of the incident beams determined by the couch and gantry angle combination. It's worth noting that the number of beams and beam separation for treatment planning can be adjusted to accommodate patient-specific parameters.
 
