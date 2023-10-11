@@ -1,5 +1,5 @@
-# Tailoring_Proton_Therapy_for_Lung_Cancer_Patients
-# Proton Therapy Workflow
+
+# Optimal Beam Angles in Proton Therapy for Lung Cance
 Welcome to the Proton Therapy Workflow repository! This project presents a comprehensive proton therapy workflow, encompassing two main algorithms: the Pre-processing Algorithm and the Angle Selection Algorithm. This README provides an overview of the entire workflow, serving as your guide to navigate through the project's subfolders and understand how these algorithms work together to enhance radiation therapy planning.
 
 ## Overview
