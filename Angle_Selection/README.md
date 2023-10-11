@@ -58,3 +58,6 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 </p>
 
 
+### Angle Selection 
+</br> Using the Final Z-score map for each patient, we extracted and utilised the three optimal treatment angles for treatment planning. These optimal angles were identified by selecting the three-angle combination with the lowest Z-score. To prevent cross-beam irradiation, we enforced a minimum 20-degree angle separation between all beams. We assessed beam separation based on the Central Angle theorem, which describes the angular separation of two points located on the surface of a sphere. In our case, these two points represented the starting points of the incident beams determined by the couch and gantry angle combination. It's worth noting that the number of beams and beam separation for treatment planning can be adjusted to accommodate patient-specific parameters.
+
