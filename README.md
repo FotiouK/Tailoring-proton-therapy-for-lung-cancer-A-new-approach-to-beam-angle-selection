@@ -1,13 +1,12 @@
 
 # Optimal Beam Angles in Proton Therapy for Lung Cancer
-Welcome to the Proton Therapy Workflow repository! This project presents a comprehensive proton therapy workflow, encompassing two main algorithms: the Pre-processing Algorithm and the Angle Selection Algorithm. This README provides an overview of the entire workflow, serving as your guide to navigate through the project's subfolders and understand how these algorithms work together to enhance radiation therapy planning.
-
+Welcome to the Optimal Beam Angles in Proton Therapy for Lung Cancer repository! This project presents a comprehensive proton therapy workflow, encompassing two main algorithms: the Pre-processing Algorithm and the Angle Selection Algorithm. This README provides an overview of the entire workflow, serving as your guide to navigate through the project's subfolders and understand how these algorithms work together to enhance proton therapy planning for mobile tumours.
 ## Overview
-Proton therapy is a cutting-edge approach in cancer treatment that utilizes proton beams to precisely target and irradiate tumor tissues while minimizing damage to surrounding healthy organs. To optimize this therapy, we've developed a thorough workflow that consists of the following components:
+Proton therapy offers a precise and effective way to target cancerous cells while minimising damage to surrounding healthy tissue. However, the intricacies of proton transport in non-stationary mediums introduces challenges. Anatomical changes, driven by respiratory-induced intra-fractional motion, can significantly alter proton radiological paths, leading to dose distribution distortions and potential plan degradation. Our primary objective is to develop a robust methodology to identify optimal beam angles for proton therapy in lung cancer. These angles will not only ensure effective tumor dose delivery but also minimise the accumulated dose in nearby organs at risk (OARs), ultimately improving treatment outcomes.To optimise the angle selection procedure, we have developed a thorough workflow that consists of the following components:
 
-- **Pre-processing Algorithm**: This initial step focuses on preparing the input data. It involves generating CT scan representations, delineating radiation therapy volumes, and converting Hounsfield Units (HU) to Relative Stopping Power (RSP). The resulting data is essential for effective proton therapy planning.
+- **Pre-processing Algorithm**: This initial step focuses on preparing the input data, which consists of 4D-CT scans. It involves generating CT scan representations such as the AIP, MIP and MinIP, delineating radiation therapy volumes, and converting Hounsfield Units (HU) to Relative Stopping Power (RSP). The resulting data were inputted in the angle selection algorithm and are essential for effective proton therapy planning.
 
-- **Angle Selection Algorithm**: Once the data is pre-processed, the Angle Selection Algorithm comes into play. This algorithm assesses the impact of incident beam geometry on plan quality, identifying optimal treatment angles while ensuring tumor coverage and minimizing dose to organs at risk. The transformation matrices for couch and gantry angles play a vital role in this step.
+- **Angle Selection Algorithm**: After pre-processing, the Angle Selection Algorithm is employed. This algorithm thoroughly evaluates the influence of incident beam geometry on plan parameters. It identifies optimal treatment angles that strike a balance between comprehensive tumor coverage and minimising radiation dose to organs at risk. Tumour dose degradation is investigated through Water Equivalent Path Length (WEPL) analysis, while the dose to organs at risk (OARs) is assessed via Percentage Volume Irradiation (PIV).
 
 ## Repository Structure
 
@@ -15,7 +14,9 @@ Our repository is organized into subfolders to help you navigate through the two
 
 - **Pre_Processing**: This folder contains the Pre-processing Algorithm documentation. Here, you'll find detailed information on generating CT scan representations, delineating target volumes, and performing HU to RSP conversions.
 
-- **Angle_Selection**: Inside this folder, you'll discover the Angle Selection Algorithm documentation. This section explains the process of assessing beam geometry, using transformation matrices, and identifying optimal treatment angles.
+- **Angle_Selection**: Inside this folder, you'll discover the Angle Selection Algorithm code and documentation. This section provides a detailed documentation of the beam simulation process for different gantry-couch angle combinations. It additionally covers the assessment of how incident beam geometry influences treatment planning parameters and finally the process of identifying optimal beam geometries tailored to each patient
+
+- **Images:** This folder contains all the images used throughout the documentation to provide visual insights and aid in understanding the algorithms and processes described.
 
 ## Getting Started
 
