@@ -17,3 +17,7 @@ The angle-dependent plots below demonstrate the impact of incident beam angle on
 <img align="centre" height = 300  src="../Images/Validation_Angle_Selection/P104_Heart_PIV_Dose.png">
 <img align="centre" height = 300  src="../Images/Validation_Angle_Selection/P104_Spinal_Cord_PIV_Dose.png">
 <img align="centre" height = 300  src="../Images/Validation_Angle_Selection/P104_Lungs_PIV_Dose.png">
+
+
+Similar trends were observed throughout the entire patient cohort, demonstrating consistent behaviour in terms of both tumour dose degradation and accumulated organ doses. Subsequently, the Pearson Correlation Coefficient (PCC) statistical test was conducted to analyse the findings of the angle selection algorithm, with the results illustrated in the box plot below. 
+<br>The mean ΔWEPL exhibited a strong positive correlation with iCTV D95 and D98 reduction, with an average PCC of 0.90 and 0.87 across the patient population. Furthermore, the PIV of OARs displayed a robust positive correlation with accumulated organ doses. The population average PCC values were reported at 0.88 for heart D5, 0.98 for heart Mean, 0.93 for spinal cord D5, 0.97 for spinal cord Mean, 0.90 for lungs Mean, and 0.89 for lungs V20. These results emphasise the significant impact of beam orientation on organ dose and the effectiveness of the angle selection algorithm in optimising proton therapy beam orientations.
