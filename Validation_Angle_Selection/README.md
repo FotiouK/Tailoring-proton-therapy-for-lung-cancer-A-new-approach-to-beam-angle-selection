@@ -11,3 +11,9 @@ To assess the efficacy of our angle selection algorithm for proton beam therapy 
 <br> The impact of the ΔWEPL metric on tumor dose reduction and OAR irradiation in relation to OAR accumulated dose was analysed and quantified using the linear Pearson's correlation coefficient (PCC). This extensive validation process ensures the reliability and effectiveness of our angle selection algorithm for proton therapy in lung cancer cases.
 
 ### Results 
+The angle-dependent plots below demonstrate the impact of incident beam angle on assessed dose parameters, offering insights into the anticipated beam simulation outcomes. Below we depict an example from patient 104, highlighting the influence of incident beam geometry on tumor coverage through ΔD95 and ΔD98. Particularly noteworthy is the strong correlation observed between average ΔWEPL values and tumor dose degradation. This correlation effectively allows for the identification of angles characterized by significant or minor fluctuations caused by respiratory motion.
+<img align="centre" height = 300  src="../Images/Validation_Angle_Selection/P104_Tumour_WEPL_Dose.png">
+</br>In the following graphs, we visualize the impact of incident proton beams on OAR doses for patient 104, represented by the D05 and DMean for the heart and spinal cord, as well as DMean and V20 for the lungs. Similar to tumour behaviour, a robust correlation between the Percentage Volume Irradiation (PIV) of the examined OAR and the resulting organ dose statistics is evident. This correlation allows for the identification of incident beam orientations that effectively minimise accumulated organ doses.
+<img align="centre" height = 300  src="../Images/Validation_Angle_Selection/P104_Heart_PIV_Dose.png">
+<img align="centre" height = 300  src="../Images/Validation_Angle_Selection/P104_Spinal_Cord_PIV_Dose.png">
+<img align="centre" height = 300  src="../Images/Validation_Angle_Selection/P104_Lungs_PIV_Dose.png">
