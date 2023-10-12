@@ -1,6 +1,6 @@
 
-# Optimal Beam Angles in Proton Therapy for Lung Cancer
-Welcome to the Optimal Beam Angles in Proton Therapy of Lung Cancer repository! This project presents a comprehensive proton therapy workflow, encompassing two main algorithms: the Pre-Processing Algorithm and the Angle Selection Algorithm. This README provides an overview of the entire workflow, serving as your guide to navigate through the project's subfolders and understand how these algorithms work together to enhance proton therapy planning for mobile tumours.
+# Optimising Beam Angles in Proton Therapy for Lung Cancer
+Welcome to the Optimising Beam Angles in Proton Therapy of Lung Cancer repository! This project presents a comprehensive proton therapy workflow, encompassing two main algorithms: the Pre-Processing Algorithm and the Angle Selection Algorithm. This README provides an overview of the entire workflow, serving as your guide to navigate through the project's subfolders and understand how these algorithms work together to enhance proton therapy planning for mobile tumours.
 ## Overview
 Proton therapy offers a precise and effective way to target cancerous cells while minimising damage to surrounding healthy tissue. However, the intricacies of proton transport in non-stationary mediums introduces challenges. Anatomical changes, driven by respiratory-induced intra-fractional motion, can significantly alter proton radiological paths, leading to dose distribution distortions and potential plan degradation. Our primary objective is to develop a robust methodology to identify optimal beam angles for proton therapy in lung cancer. These angles will not only ensure effective tumor dose delivery but also minimise the accumulated dose in nearby organs at risk (OARs), ultimately improving treatment outcomes.To optimise the angle selection procedure, we have developed a thorough workflow that consists of the following components:
 
@@ -12,7 +12,7 @@ Proton therapy offers a precise and effective way to target cancerous cells whil
 
 Our repository is organised into subfolders to help you navigate through the two main algorithms:
 
-- **Pre_Processing:** This folder contains the Pre-processing Algorithm documentation. Here, you'll find detailed information on generating CT scan representations, delineating target volumes, and performing HU to RSP conversions.
+- **Pre_Processing:** This folder contains the Pre-processing Algorithm documentation and code. Here, you'll find detailed information on generating CT scan representations, delineating radiotherapy volumes, and performing HU to RSP conversions.
 
 - **Angle_Selection:** Inside this folder, you'll discover the Angle Selection Algorithm code and documentation. This section provides a detailed documentation of the beam simulation process for different gantry-couch angle combinations. It additionally covers the assessment of how incident beam geometry influences treatment planning parameters and finally the process of identifying optimal beam geometries tailored to each patient
 
