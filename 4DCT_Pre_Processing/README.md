@@ -5,9 +5,11 @@ Welcome to the Pre-processing Algorithm documentation, a fundamental step in our
 ### Input Data:
 
 This pre-processing algorithm readies input data for the Angle Selection Algorithm. It utilizes 4-Dimensional Computed Tomography scans (4DCT) from Non-Small Cell Lung Cancer patients sourced from the Cancer Imaging Archive. In 4DCT, multiple time-stamped images form a dynamic sequence akin to a video, providing insights into physiological processes and internal movements. These scans are particularly useful for analysing mobile tumours, especially in the thoracic region, as they reveal patient-specific intrafractional motion. A 4DCT scan consists of ten 3D CT scans, each representing a specific respiratory phase (from inhalation to exhalation). DICOM RT structure files, one for each phase, contain delineations of tumors and organs at risk (OAR), crucial for accurate proton therapy planning.
+<p align="center">
+  <img src="../Images/Pre_Processing/4DCT_p107.png">
+</p>
+
 The input data for our algorithm comprises the 4DCT scans and delineations, which have been converted from the Digital Image Communication in Medicine (DICOM) format into arrays. For details on converting DICOM to arrays, you can refer to Kerem et al.'s repository, which provides a comprehensive resource on this process ( https://github.com/KeremTurgutlu/dicom-contour ). In our algorithm, each phase of the 4DCT scans is transformed into a 3D array where the voxel coordinates indicate the geometric location, and the voxel value represents the Hounsfield Units (HU). The delineations are represented in an array of the same dimensions as the image, with a voxel value of 1 indicating the masked contour, effectively outlining the regions of interest.
-
-
 
 
 ### Generating CT Scan Representations from 4D CT 
