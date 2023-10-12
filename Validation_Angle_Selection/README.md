@@ -5,9 +5,9 @@ To evaluate the effectiveness of our beam angle optimization algorithm, we condu
 <br> An experienced radiation oncologist delineated target volumes and organs at risk. For each patient, the gross tumor volume (GTV) was initially delineated across all ten breathing phases. Due to the extensive nature of the dataset, delineations of organs at risk were performed on a subset of images. Consequently, we utilised data from 11 patients in this study, ensuring the delineation of all relevant organs at risk. The patient numbers align with those in the TCIA archive to maintain reproducibility.
 
 ### Validation Plans
+<img align="left" width="410" height="380"  src="../Images/Validation_Angle_Selection/p104_Validation_Plan.png">
 To assess the efficacy of our angle selection algorithm for proton beam therapy in mitigating the effects of intra-fractional motion, we executed comprehensive validation plans. This involved the generation of 36 single-beam uniform treatment plans for each patient. These treatment plans were created using RayStation 12A (RaySearch, Stockholm) and covered beams at 10-degree gantry angle intervals from 0 to 360 degrees, all with a fixed couch angle of 0 degrees. Each plan was generated and optimised based on the AIP CT scan, with planning conducted on the iCTV and normalization such that the median iCTV dose equalled the prescribed dose. We employed standard fractionation plans with 33 fractions of 2 Gy for all patients.
 <br> To evaluate variations in target dose coverage and organ dose accumulation arising from respiratory-induced motion, the single-beam plans were deformably transferred to each of the ten 4DCT phases and subsequently averaged, assuming an equal contribution from each breathing phase. We recorded reductions in tumor dose by inspecting the iCTV D95 and D98 relative to the planned values. Additionally, we documented OAR dose statistics.
 <br> The impact of the ΔWEPL metric on tumor dose reduction and OAR irradiation in relation to OAR accumulated dose was analysed and quantified using the linear Pearson's correlation coefficient (PCC). This extensive validation process ensures the reliability and effectiveness of our angle selection algorithm for proton therapy in lung cancer cases.
 
-
-Images/Validation_Angle_Selection/p104_Validation_Plan.png
+### Results 
