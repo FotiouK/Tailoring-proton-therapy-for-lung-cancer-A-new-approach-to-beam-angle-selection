@@ -20,7 +20,7 @@ Our repository is organized into subfolders to help you navigate through the two
 
 ## Getting Started
 
-Whether you're a researcher, a medical professional, or an enthusiast interested in proton therapy, our workflow provides valuable insights into the various steps that contribute to precise proton therapy planning. To get started, visit the specific subfolders for in-depth information on each algorithm. Follow the documentation, and don't hesitate to reach out if you have any questions or feedback.
+Whether you're a researcher, a medical professional, or an enthusiast interested in proton therapy or medical image analysis, our workflow provides valuable insights into the various steps that contribute to precise proton therapy planning. To get started, visit the specific subfolders for in-depth information on each algorithm. Follow the documentation, and don't hesitate to reach out if you have any questions or feedback.
 
 ## License
 
