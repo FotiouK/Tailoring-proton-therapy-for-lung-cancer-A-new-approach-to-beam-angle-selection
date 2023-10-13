@@ -387,7 +387,7 @@ df['lungs_score'] = stats.zscore(df['beam_lungs'])
 # Tumour Weighting Factor
 tw = 2
 # Heart Weighting Factor
-hw = 1
+hw = 1.5
 # Spinal Cord Weighting Factor
 cw = 0.5
 # Lungs Weighting Factor
