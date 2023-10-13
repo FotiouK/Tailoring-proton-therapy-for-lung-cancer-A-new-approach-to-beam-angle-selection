@@ -30,4 +30,4 @@ You are welcome to use, modify, and distribute the codes presented in the reposi
 
 ## Contact
 If you have any questions, suggestions, or need assistance, please do not hesitate to contact us at [kyriakosfotiou1@gmail.com].
-Thank you for joining us on identifying personalised proton therapy solutions for lung cancer patients.
+<br>Thank you for joining us on identifying personalised proton therapy solutions for lung cancer patients.
