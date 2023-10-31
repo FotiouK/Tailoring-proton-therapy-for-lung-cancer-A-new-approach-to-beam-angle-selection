@@ -9,7 +9,7 @@ This pre-processing algorithm readies input data for the Angle Selection Algorit
   <img width = 800 src="../Images/Pre_Processing/4DCT_p101.png">
 </p>
 
-The input data for our algorithm comprises the 4DCT scans and delineations, which have been converted from the Digital Image Communication in Medicine (DICOM) format into arrays. For details on converting DICOM to arrays, you can refer to Kerem et al.'s repository, dicom-contour, which provides a comprehensive resource on this process ( https://github.com/KeremTurgutlu/dicom-contour ). In our algorithm, each phase of the 4DCT scans is transformed into a 3D array where the voxel coordinates indicate the geometric location, and the voxel value represents the Hounsfield Units (HU). The delineations are represented in an array of the same dimensions as the image, with a voxel value of 1 indicating the masked contour, effectively outlining the regions of interest.
+The input data for our algorithm comprises the 4DCT scans and delineations, which have been converted from the Digital Image Communication in Medicine (DICOM) format into arrays. For details on converting DICOM to arrays, you can refer to [Kerem et al.'s](https://github.com/KeremTurgutlu/dicom-contour) repository, dicom-contour, which provides a comprehensive resource on this process. In our algorithm, each phase of the 4DCT scans is transformed into a 3D array where the voxel coordinates indicate the geometric location, and the voxel value represents the Hounsfield Units (HU). The delineations are represented in an array of the same dimensions as the image, with a voxel value of 1 indicating the masked contour, effectively outlining the regions of interest.
 
 
 ### Generating CT Scan Representations from 4D CT 
