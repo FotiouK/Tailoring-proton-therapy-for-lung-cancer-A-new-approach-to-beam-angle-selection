@@ -6,12 +6,16 @@ To assess the impact of incident beam geometry on plan quality, we developed an 
 **Transformation Matrices:**
 <br> For gantry angle (GA) and couch angle (CA), the transformation matrices are defined as follows:
 
-<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Gantry Angle Matrix:* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Couch Angle Matrix:*
-```plaintext                             
-[1       0       0    ]                  [cos(CA) 0 -sin(CA)]
-[0    cos(GA)  sin(GA)]                  [  0     1     0   ]
-[0   -sin(GA)  cos(GA)]                  [sin(CA) 0  cos(CA)]
-```
+$$ GA = \begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & \cos(GA) & \sin(GA) \\
+    0 & -\sin(GA) & \cos(GA)
+\end{pmatrix} \quad
+CA = \begin{pmatrix}
+    \cos(CA) & 0 & -\sin(CA) \\
+    0 & 1 & 0 \\
+    \sin(GA) & 0 & \cos(GA)
+\end{pmatrix} $$
 
 <br> Instead of directly transforming the scans, we divide the beam path into discrete steps, initiating from the tumour’s distal edge points and inversely simulating the proton beam paths. We utilise a directional vector [0,-1,0] to represent each step's direction, ensuring that for gantry and couch angles of 0 degrees, the beam travels normally towards the patient from the anterior direction. This methodology helps generate the step vector of magnitude 1 describing the beam path for any arbitrary gantry-couch angle combination.
 
