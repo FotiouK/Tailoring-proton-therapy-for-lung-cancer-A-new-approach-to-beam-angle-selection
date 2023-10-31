@@ -24,9 +24,9 @@ Our repository is organised into subfolders to help you navigate through the two
 
 Whether you're a researcher, a medical professional, or an enthusiast interested in proton therapy or medical image analysis, our workflow provides valuable insights into the various steps that contribute to precise proton therapy planning. To get started, visit the specific subfolders for in-depth information on each algorithm. Follow the documentation, and don't hesitate to reach out if you have any questions or feedback.
 
-## Terms of Use and Citation Guidelines
-
-You are welcome to use, modify, and distribute the codes presented in the repository. Please be aware that this project is intended for research purposes only and should not be used for clinical applications. If you use any part of this code in your research or projects, we kindly request that you cite this project as a reference. Thank you for your cooperation and understanding.
+## License 
+This project is provided under the MIT License. You are welcome to use, modify, and distribute the codes presented in the repository under the terms of the MIT License. Please refer to the "LICENSE" file and the accompanying license documentation for full details.
+Please be aware that this project is intended for research purposes only and should not be used for clinical applications. 
 
 ## Contact
 If you have any questions, suggestions, or need assistance, please do not hesitate to contact us at [kyriakosfotiou1@gmail.com].
