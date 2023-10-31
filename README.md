@@ -12,13 +12,13 @@ Proton therapy offers a precise and effective way to target cancerous cells whil
 
 Our repository is organised into subfolders to help you navigate through the two main algorithms:
 
-- **Pre_Processing:** This folder contains the Pre-processing Algorithm documentation and code. Here, you'll find detailed information on generating CT scan representations, delineating radiotherapy volumes, and performing HU to RSP conversions.
+- **[Pre_Processing](https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/tree/main/4DCT_Pre_Processing):** This folder contains the Pre-processing Algorithm documentation and code. Here, you'll find detailed information on generating CT scan representations, delineating radiotherapy volumes, and performing HU to RSP conversions.
 
-- **Angle_Selection:** Inside this folder, you'll discover the Angle Selection Algorithm code and documentation. This section provides a detailed documentation of the beam simulation process for different gantry-couch angle combinations. It additionally covers the assessment of how incident beam geometry influences treatment planning parameters and finally the process of identifying optimal beam geometries tailored to each patient
+- **[Angle_Selection](https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/tree/main/Angle_Selection):** Inside this folder, you'll discover the Angle Selection Algorithm code and documentation. This section provides a detailed documentation of the beam simulation process for different gantry-couch angle combinations. It additionally covers the assessment of how incident beam geometry influences treatment planning parameters and finally the process of identifying optimal beam geometries tailored to each patient
 
-- **Validation_Angle_Selection:** This section delves into the validation process for the Angle Selection Algorithm. It includes information about the patient dataset, the generated proton therapy treatment plans, and subsequent dose analysis. Additionally, you will find the results for all 11 patients utilised in our validation. This provides essential insights into the algorithm's effectiveness in personalising proton therapy treatment plans.
+- **[Validation_Angle_Selection](https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/tree/main/Validation_Angle_Selection):** This section delves into the validation process for the Angle Selection Algorithm. It includes information about the patient dataset, the generated proton therapy treatment plans, and subsequent dose analysis. Additionally, you will find the results for all 11 patients utilised in our validation. This provides essential insights into the algorithm's effectiveness in personalising proton therapy treatment plans.
 
-- **Images:** This folder contains all the images used throughout the documentation to provide visual insights and aid in understanding the algorithms and processes described.
+- **[Images](https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/tree/main/Images):** This folder contains all the images used throughout the documentation to provide visual insights and aid in understanding the algorithms and processes described.
 
 ## Getting Started
 
