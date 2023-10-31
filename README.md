@@ -5,7 +5,7 @@ Welcome to the Optimising Beam Angles in Proton Therapy of Lung Cancer repositor
 
 
 
-<img src="https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/assets/108896534/f32736e3-822a-4566-ba69-ab9f1ca5d39c" alt="p100_gif" style="height: 400px;" /> <img src="https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/blob/main/Images/Angle_Selection/p104_Beam_Visualisation.png" alt="Image 2" style="height: 400px;" />
+<img src="https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/assets/108896534/f32736e3-822a-4566-ba69-ab9f1ca5d39c" alt="p100_gif" style="height: 300px;" /> <img src="https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/blob/main/Images/Angle_Selection/p104_Beam_Visualisation.png" alt="Image 2" style="height: 300px;" />
 
 
 ## Overview
