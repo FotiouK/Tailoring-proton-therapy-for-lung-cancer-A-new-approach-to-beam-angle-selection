@@ -1,6 +1,6 @@
 
 # Optimising Beam Angles in Proton Therapy for Lung Cancer
-Welcome to the Optimising Beam Angles in Proton Therapy of Lung Cancer repository! This project presents a comprehensive proton therapy workflow, encompassing two main algorithms: the Pre-Processing Algorithm and the Angle Selection Algorithm. This README provides an overview of the entire workflow, serving as your guide to navigate through the project's subfolders and understand how these algorithms work together to enhance proton therapy planning for mobile tumours.
+Welcome to the Optimising Beam Angles in Proton Therapy of Lung Cancer repository! This project presents a comprehensive proton therapy workflow, encompassing two main algorithms: the Pre-Processing Algorithm and the Angle Selection Algorithm. This README provides an overview of the entire workflow, serving as your guide to navigate through the project's subfolders and understand how these algorithms work together to enhance proton therapy planning for mobile tumours. 
 
 
 
