@@ -35,5 +35,5 @@ This project is provided under the MIT License. You are welcome to use, modify, 
 Please be aware that this project is intended for research purposes only and should not be used for clinical applications. 
 
 ## Contact
-If you have any questions, suggestions, or need assistance, please do not hesitate to contact us at kyriakosfotiou1@gmail.com.
+If you have any questions, suggestions, or need assistance, please do not hesitate to contact us at [kyriakosfotiou1@gmail.com](mailto:kyriakosfotiou1@gmail.com)
 <br>Thank you for joining us on identifying personalised proton therapy solutions for lung cancer patients.
