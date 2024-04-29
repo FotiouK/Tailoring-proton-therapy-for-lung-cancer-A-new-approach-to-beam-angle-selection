@@ -35,7 +35,7 @@ CA = \begin{pmatrix}
 <br> Subsequently, we simulate beam rays inversely, using the estimated distal edge points and the beam step vector. Initiating from the identified distal edge points, the algorithm generates lines representing beam trajectories by incrementing the coordinates in the opposite direction of the beam ray. This iterative process continues until the proton ray reaches the image boundaries, encompassing all distal edge points. To handle steps with decimal places, only the coordinate corresponding to a unique voxel traversed by the beam is rounded up, while the rolling sum of coordinates retains decimal precision. The output consists of a list of lists, where each inner list contains the irradiated voxels along the proton ray's path, terminating at a distal edge point. In the adjacent image, we visualise the simulate beam for gantry angle 45 and couch angle 0 degrees in blue, the tumour in red and the distal edge in yellow. The distal edge was expanded by 5mm for visualisation purposes.
 
 
-### ΔWEPL and OAR irradiation maps
+### Risk Maps: ΔWEPL and PIV
 Optimal proton beam geometry should consider both tumour coverage and minimising dose to organs at risk. We evaluated tumor coverage using Water Equivalent Path Length (WEPL) analysis and assessed organs at risk using Percentage Volume Irradiation (PIV). Calculations were performed for approximately 350 beam orientations, with the 2D maps below depicting  the results for patient 104.
 
 **Tumour Coverage:**
