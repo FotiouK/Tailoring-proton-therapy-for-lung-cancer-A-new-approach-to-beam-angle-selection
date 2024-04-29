@@ -43,7 +43,9 @@ Optimal proton beam geometry should consider both sufficient tumour coverage and
 We determined the reference WEPL from planning CT scans (AIP CT from pre-processing) for each proton ray with specific gantry-couch angles. We also computed the WEPLs of each ray for all breathing phases from the converted RSP 4DCT scans. ΔWEPL for each ray was calculated by subtracting the absolute value of reference WEPL from the evaluated WEPL. The average of all proton rays yielded a single-phase proton beam ΔWEPL, while averaging over all phases provided the overall ΔWEPL value representative of the entire beam. 
 
 **Organs At Risk Dose:**
-</br> The impact of incident beam geometry on the accumulated dose for organs at risk was evaluated through the Percentage Volume Irradiation (PIV). PIV measures the overlap between the incident beam and the organ, normalised to the total organ volume. The algorithm considered organs at risk such as the heart, lungs, and spinal cord.
+</br> The impact of incident beam geometry on the accumulated dose for organs at risk was evaluated through the Percentage Irradiated Volume (PIV). PIV measures the overlap between the incident beam and the organ, normalised by the total organ volume. Organs at risk considered in this algorithm are the heart, lungs and spinal cord, but the methodology could be expanded to incorporate organs such as the trachea and the esophagus.
+
+
 
 
 <p align="center">
