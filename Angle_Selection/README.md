@@ -59,18 +59,19 @@ $$
 Z = \frac{x_i - \mu}{\sigma}
 $$
 
-<br> Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient 104. Upon comparison with the previously mentioned maps, we observed consistent behavioural patterns, with only variations in pixel values.
+Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient 104. Upon comparison with the previously mentioned maps, we observed consistent behavioural patterns, with only variations in pixel values.
 
 <p align="center">
   <img height="300" src="../Images/Angle_Selection/Z_Score_Values_p104.png">
 </p>
 
-</br>  To create a unified metric, we followed a methodology similar to the treatment planning optimisation process, where weighting factors are applied to plan parameters. In this case, we multiplied each map with distinct weighting factors and then summed them to generate the Final Z-score map. These weighting factors were determined based on various considerations, including patient anatomy, analysis of variable effectiveness maps, and the patient's prior medical history. This approach allowed for adjustments between plan objectives during the angle selection process, enabling a higher flexibility during treatment planning.
-<br>  For patient 104, we applied specific weighting factors as follows: a tumour weighting factor of 2, 1.5 for the heart, 1.8 for the lungs, and 0.5 for the spinal cord. The resulting Final Z-Score map is shown below.
+</br>  To create a unified metric, we followed a methodology similar to a treatment planning optimisation process, where weighting factors are applied to plan parameters. In this case, we multiplied each map with distinct weighting factors and then summed them to generate the Final Risk (FR) map. These weighting factors were determined based on various considerations, including patient anatomy, analysis of variable effectiveness maps, and the patient's prior medical history. This approach allowed for adjustments between plan objectives during the angle selection process, enabling a higher flexibility during treatment planning. The mathematical formulation of the FR map is defined as,
 
 $$
-x_i^{\text{FR}} = \sum_{W} W_z x_i^Z = W_T x_i^T + W_H x_i^H + W_L x_i^L + W_S x_i^S
+x_i^{\text{FR}} = \sum_{Z} W_z x_i^Z = W_T x_i^T + W_H x_i^H + W_L x_i^L + W_S x_i^S
 $$
+
+For patient B, we applied specific weighting factors as follows: a tumour weighting factor of 2, 1.5 for the heart, 1.8 for the lungs, and 0.5 for the spinal cord. The resulting Final Risk map is shown below.
 
 <p align="center">
   <img height="300" src="../Images/Angle_Selection/Final_Z_Score_Map_p104.png">
@@ -79,5 +80,12 @@ $$
 
 ### Angle Selection 
 <img align="left"   src="../Images/Angle_Selection/Central_angle_theorem.png">
-</br> Using the Final Z-score map for each patient, we extracted and utilised the three optimal treatment angles for treatment planning. These optimal angles were identified by selecting the three-angle combination with the lowest Z-score. To prevent cross-beam irradiation, we enforced a minimum 20-degree angle separation between all beams. We assessed beam separation based on the Central Angle theorem, which describes the angular separation of two points located on the surface of a sphere. In our case, these two points represented the starting points of the incident beams determined by the couch and gantry angle combination. It's worth noting that the number of beams and beam separation for treatment planning can be adjusted to accommodate patient-specific parameters.
+</br> Using the Final Risk map for each patient, we could extracted and utilised any n number combination of optimal treatment angles for treatment planning. These optimal angles were identified by selecting the n-angle combination with the lowest risk score To prevent cross-beam irradiation, we enforced a minimum x-degree angle separation between all beams. We assessed beam separation based on the Central Angle theorem, which describes the angular separation of two points located on the surface of a sphere. In our case, these two points represented the starting points of the incident beams determined by the couch and gantry angle combination. The central angle theorem was thus defined as, 
+
+$$
+\text{CA} = \arccos(\sin(\text{GA}_1) \sin(\text{GA}_2) + \cos(\text{GA}_1) \cos(\text{GA}_2) \cos(|\text{CA}_1 - \text{CA}_2|))
+$$
+
+It's worth noting that the number of beams n and beam separation x can be adjusted to accomodate the treatmetns need of each patient.
+
 
