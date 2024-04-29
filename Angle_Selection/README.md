@@ -80,12 +80,12 @@ For patient B, we applied specific weighting factors as follows: a tumour weight
 
 ### Angle Selection 
 <img align="left"   src="../Images/Angle_Selection/Central_angle_theorem.png">
-</br> Using the Final Risk map for each patient, we could extracted and utilised any n number combination of optimal treatment angles for treatment planning. These optimal angles were identified by selecting the n-angle combination with the lowest risk score To prevent cross-beam irradiation, we enforced a minimum x-degree angle separation between all beams. We assessed beam separation based on the Central Angle theorem, which describes the angular separation of two points located on the surface of a sphere. In our case, these two points represented the starting points of the incident beams determined by the couch and gantry angle combination. The central angle theorem was thus defined as, 
+</br> Using the Final Risk map for each patient, we could extracted and utilised any number (N) angle combinations for treatment planning. These optimal angles were identified by selecting the N-angle combination with the lowest risk score. To prevent cross-beam irradiation, we enforced a minimum X-degree angle separation between all beams. We assessed beam separation based on the Central Angle theorem, which describes the angular separation of two points located on the surface of a sphere. In our case, these two points represented the starting points of the incident beams determined by the couch and gantry angle combination. The central angle theorem was thus defined as, 
 
 $$
 \text{CA} = \arccos(\sin(\text{GA}_1) \sin(\text{GA}_2) + \cos(\text{GA}_1) \cos(\text{GA}_2) \cos(|\text{CA}_1 - \text{CA}_2|))
 $$
 
-It's worth noting that the number of beams n and beam separation x can be adjusted to accomodate the treatmetns need of each patient.
+It's worth noting that the number of beams N and beam separation X can be adjusted to accomodate the treatmetns need of each patient.
 
 
