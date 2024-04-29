@@ -54,6 +54,11 @@ We determined the reference WEPL from planning CT scans (AIP CT from pre-process
 
 ### Z-Score Normalisation.
 We integrated information from the Water Equivalent Path Length difference (ΔWEPL) and Organ at Risk irradiation maps using the Z-score statistic. This statistical method standardized the values of each map, allowing us to combine them into a single metric. Z-score conversion was applied on every pixel in the ΔWEPL and PIV maps shown above. This transformation turned pixel values into relative variables, indicating their deviation from the population average in terms of standard deviation. Positive Z-scores represented values above the mean, while negative Z-scores indicated values below the mean.
+<br>
+$$
+Z = \frac{x_i - \mu}{\sigma}
+$$
+
 <br> Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient 104. Upon comparison with the previously mentioned maps, we observed consistent behavioural patterns, with only variations in pixel values.
 
 <p align="center">
