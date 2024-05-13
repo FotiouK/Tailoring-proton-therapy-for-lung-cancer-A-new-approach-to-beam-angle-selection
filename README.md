@@ -18,7 +18,7 @@ Proton therapy offers a precise and effective way to target cancerous cells whil
 
 Our repository is organised into subfolders to help you navigate through the two main algorithms:
 
-- **[Pre_Processing](https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/tree/main/4DCT_Pre_Processing):** This folder contains the Pre-processing Algorithm documentation and code. Here, you'll find detailed information on generating CT scan representations, delineating radiotherapy volumes, and performing HU to RSP conversions.
+- **[Pre_Processing](https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/tree/main/4DCT_Pre_Processing):** This folder contains the Pre-processing Algorithm documentation and code. Here, you'll find detailed information on generating CT scan representations, delineating radiotherapy volumes, and performing HU to SPR conversions.
 
 - **[Angle_Selection](https://github.com/FotiouK/Optimising_Beam_Angles_in_Proton_Therapy_of_Lung_Cancer/tree/main/Angle_Selection):** Inside this folder, you'll discover the Angle Selection Algorithm code and documentation. This section provides a detailed documentation of the beam simulation process for different gantry-couch angle combinations. It additionally covers the assessment of how incident beam geometry influences treatment planning parameters and finally the process of identifying optimal beam geometries tailored to each patient
 
