@@ -66,7 +66,7 @@ Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient B. Upo
   <img height="300" src="../Images/Angle_Selection/Z_Score_Values_p104.png">
 </p>
 
-</br>  To create a unified metric, we followed a methodology similar to a treatment planning optimisation process, where weighting factors are applied to plan parameters. In this case, we multiplied each map with distinct weighting factors and then summed them to generate the Final Risk (FR) map. These weighting factors were determined based on various considerations, including patient anatomy, analysis of variable effectiveness maps, and the patient's prior medical history. This approach allowed for adjustments between plan objectives during the angle selection process, enabling a higher flexibility during treatment planning. The mathematical formulation of the FR map is defined as,
+</br>  To create a unified metric, we followed a methodology similar to a treatment planning optimisation process, where weighting factors are applied to plan parameters. In this case, we multiplied each map with distinct weighting factors and then summed them to generate the Final Risk (FR) map. These weighting factors can be determined based on various considerations, including patient anatomy, analysis of variable effectiveness maps, and the patient's prior medical history. This approach allowes for adjustments between plan objectives during the angle selection process, enabling a higher flexibility during treatment planning. The mathematical formulation of the FR map is defined as,
 
 $$
 x_i^{\text{FR}} = \sum_{Z} W_z x_i^Z = W_T x_i^T + W_H x_i^H + W_L x_i^L + W_S x_i^S
