@@ -29,7 +29,7 @@ CA = \begin{pmatrix}
 
 
 **Distal Edge Identification:**
-<br>To identify the tumour’s distal edge for various angle combinations, we employ a binary search approach. The algorithm uses the estimated step distance, derived from beam geometry, and the tumour’s spatial coordinates to search in the opposite direction of the step distance. The binary search continues until non-tumor tissue is encountered or a predetermined threshold is reached at the tumour boundary. Successful execution of the binary search results in an array containing the distal edge coordinates of the tumour.
+<br>To identify the tumour’s distal edge for various angle combinations, we employ a binary search approach. The algorithm uses the estimated step distance, derived from beam geometry, and the tumour’s spatial coordinates to search in the opposite direction of the step distance. The binary search continues until non-tumour tissue is encountered or a predetermined threshold is reached at the tumour boundary. Successful execution of the binary search results in an array containing the distal edge coordinates of the tumour.
 
 **Generating Beam Rays**
 <img align="right" width="300" height="250"  src="../Images/Angle_Selection/p104_Beam_Visualisation.png">
