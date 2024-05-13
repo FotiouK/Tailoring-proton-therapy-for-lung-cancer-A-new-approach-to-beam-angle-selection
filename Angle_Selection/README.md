@@ -81,7 +81,7 @@ For patient B, we applied specific weighting factors as follows: a tumour weight
 
 ### Angle Selection 
 <img align="left"   src="../Images/Angle_Selection/Central_angle_theorem.png">
-</br> Using the Final Risk map for each patient, we could extracted and utilised any number (N) angle combinations for treatment planning. These optimal angles were identified by selecting the N-angle combination with the lowest risk score. To prevent cross-beam irradiation, we enforced a minimum X-degree angle separation between all beams. We assessed beam separation based on the Central Angle theorem, which describes the angular separation of two points located on the surface of a sphere. In our case, these two points represented the starting points of the incident beams determined by the couch and gantry angle combination. The central angle theorem was thus defined as, 
+</br> Using the Final Risk map for each patient, optimal beam geometries of any number (N) angle combinations could be extracted and utilised for treatment planning. These optimal angles were identified by selecting the N-angle combination with the lowest risk score. To prevent cross-beam irradiation, we enforced a minimum X-degree angle separation between all beams. We assessed beam separation based on the Central Angle theorem, which describes the angular separation of two points located on the surface of a sphere. In our case, these two points represented the starting points of the incident beams determined by the couch and gantry angle combination. The central angle theorem was thus defined as, 
 
 $$
 \text{CA} = \arccos(\sin(\text{GA}_1) \sin(\text{GA}_2) + \cos(\text{GA}_1) \cos(\text{GA}_2) \cos(|\text{CA}_1 - \text{CA}_2|))
