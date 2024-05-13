@@ -37,7 +37,7 @@ CA = \begin{pmatrix}
 
 
 ### Risk Maps: ΔWEPL and PIV
-Optimal proton beam geometry should consider both sufficient tumour coverage and minimal organs at risk dose. We evaluated tumor coverage using Water Equivalent Path Length (WEPL) analysis and assessed organs at risk using Percentage Irradiated Volume (PIV). Calculations were performed for approximately 350 beam orientations, with the 2D risk maps below depicting  the results for patient B.
+Optimal proton beam geometry should consider both sufficient tumour coverage and minimal dose to organs at risk (OARs). We evaluated tumor coverage using Water Equivalent Path Length (WEPL) analysis and assessed organs at risk using Percentage Irradiated Volume (PIV). Calculations were performed for approximately 350 beam orientations, with the 2D risk maps below depicting  the results for patient B.
 
 **Tumour Coverage:**
 </br> WEPL represents the path that the proton beam would traverses through water, calculated by summing the relative proton stopping power ratio (SPR) multiplied by the cohort length (lenght traveled within the voxel). Thus, the RSP converted CT scans from our pre-processing algorithm were used as the input. In the context of proton beam therapy for lung cancer, treatment planning is performed on a static representation of the target volume. A key objective is to minimise the variations in WEPL (ΔWEPL) along the planned and evaluated beam paths, aiming to reduce uncertainties in proton range.
