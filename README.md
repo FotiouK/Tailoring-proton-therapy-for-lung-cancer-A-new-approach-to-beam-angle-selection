@@ -12,7 +12,7 @@ Proton therapy offers a precise and effective way to target cancerous cells whil
 
 - **Pre-processing Algorithm**: This initial step focuses on preparing the input data, which consists of 4D-CT scans. It involves generating CT scan representations such as the AIP, MIP and MinIP, delineating radiation therapy volumes, and converting Hounsfield Units (HU) to Relative Stopping Power (RSP). The resulting data were inputted in the angle selection algorithm and are essential for effective proton therapy planning.
 
-- **Angle Selection Algorithm**: After pre-processing, the Angle Selection Algorithm is employed. This algorithm thoroughly evaluates the influence of incident beam geometry on plan parameters. It identifies optimal treatment angles that strike a balance between comprehensive tumor coverage and minimising radiation dose to organs at risk. Tumour dose degradation is investigated through Water Equivalent Path Length (WEPL) analysis, while the dose to organs at risk (OARs) is assessed via Percentage Volume Irradiation (PIV).
+- **Angle Selection Algorithm**: After pre-processing, the Angle Selection Algorithm is employed. This algorithm thoroughly evaluates the influence of incident beam geometry on plan parameters. It identifies optimal treatment angles that strike a balance between comprehensive tumour coverage and minimising radiation dose to organs at risk. Tumour dose degradation is investigated through Water Equivalent Path Length (WEPL) analysis, while the dose to organs at risk (OARs) is assessed via Percentage Volume Irradiation (PIV).
 
 ## Repository Structure
 
