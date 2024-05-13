@@ -60,7 +60,7 @@ $$
 Z = \frac{x_i - \mu}{\sigma}
 $$
 
-Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient 104. Upon comparison with the previously mentioned maps, we observed consistent behavioural patterns, with only variations in pixel values.
+Below, you can see the Z-score-normalised ΔWEPL and PIV maps for patient B. Upon comparison with the previously mentioned maps, we observed consistent behavioural patterns, with only variations in pixel values.
 
 <p align="center">
   <img height="300" src="../Images/Angle_Selection/Z_Score_Values_p104.png">
